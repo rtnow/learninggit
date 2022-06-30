@@ -1,0 +1,16 @@
+1.将要上传的包在终端打开
+2.对git初始化：git init
+3.在github中创建一个远程仓库
+4.在终端运行命令行：git remote add origin https://github.com/rtnow/npu_navigation2.git
+注意：这个地址在github创建的仓库中进行复制
+5.在终端输入命令行：git add. 用于添加远程文件 
+注意：.代表添加全部文件
+6.查看git status
+7.告诉github提交的内容（必须），运行命令行:git commit -m "记录提交内容"
+8.查看git status
+这次应该显示无文件要提交，干净的工作区
+9.查看分支情况,包括历史记录、当前情况：git log
+10.运行命令行：git push -u origin main
+Username为仓库名，即github的用户名
+Password在settings/Developer settings/Personal access tokens中查找复制
+11.刷新github页面即可看到仓库内容进行了更新
