@@ -10,7 +10,19 @@
 8.查看git status
 这次应该显示无文件要提交，干净的工作区
 9.查看分支情况,包括历史记录、当前情况：git log
+10.将分支从master改为main：git branch -M main
 10.运行命令行：git push -u origin main
 Username为仓库名，即github的用户名
 Password在settings/Developer settings/Personal access tokens中查找复制
+若出现
+error: 推送一些引用到 'https://github.com/rtnow/npu_slam_toolbox.git' 失败
+提示：更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支。
+提示：再次推送前，先与远程变更合并（如 'git pull ...'）。详见
+提示：'git push --help' 中的 'Note about fast-forwards' 小节。
+（1）输入git pull
+（2）输入git branch --set-upstream-to=origin/<分支> main
+（3）输入git fetch
+（4）输入git pull origin main --allow-unrelated-histories
+（5）git push
+
 11.刷新github页面即可看到仓库内容进行了更新
